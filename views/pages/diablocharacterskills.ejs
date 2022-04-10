@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= char %>'s Gear</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/public/js/diablo3characters.js"></script>
+<style>
+    body {
+        margin: 10px;
+    }
+    .card-columns {
+        column-count: 1;
+    }
+
+    .card {
+        min-height: 500px;
+        max-height: 600px;
+        overflow:auto;
+    }
+    
+    .card-header {
+        max-height: 100px;
+        min-height: 100px;
+        text-align: center;
+        vertical-align:middle;
+    
+    }
+
+
+</style>
+</head>
+<body>
+    <h1><%= char %>'s Skills</h1>
+    <input type="hidden" id="bnetID" value="<%= bnet %>" />
+    <button type="button" class="btn btn-secondary btn-sm" id="diablo3itemsBackButton">< Back</button>
+    
+    <h1>Active Skills</h1>
+        <div class="card-columns">
+            <% for (const[key, value] of Object.entries(activeSkills)) { %>
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><%= value.skill.name %> <br><img style="border-radius:3px;" src="http://media.blizzard.com/d3/icons/skills/42/<%= value.skill.icon %>.png" alt=""></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <small> <%= value.skill.description %></small>
+                        </p> 
+                    </div>
+                    <% if (value.rune) { %>
+                        <div class="card-footer">
+                            <small class="text-muted"><b>Rune:</b> </small>
+                            <small class="text-muted"><%= value.rune.name %></small><br>
+                            <small class="text-muted"><%= value.rune.description %></small>
+                        </div>
+                    <% }; %> 
+                </div>
+            <% }; %>
+        </div>
+
+        <h1>Passive Skills</h1>
+        <div class="card-columns">
+            <% for (const[key, value] of Object.entries(passiveSkills)) { %>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><%= value.skill.name %> <br><img style="border-radius:3px;" src="http://media.blizzard.com/d3/icons/skills/42/<%= value.skill.icon %>.png" alt=""></div>
+                <div class="card-body">
+
+                <p class="card-text">
+                    <small> <%= value.skill.description %></small>
+                </p> 
+            </div>
+                <div class="card-footer">
+                    <small class="text-muted"><%= value.skill.flavorText %>  </small>
+                    </div>
+              </div>
+              <% }; %>
+
+        </div>
+</body>
+</html>

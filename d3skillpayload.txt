@@ -1,0 +1,221 @@
+[
+  {
+    skill: {
+      slug: 'electrocute',
+      name: 'Electrocute',
+      icon: 'wizard_electrocute',
+      level: 15,
+      tooltipUrl: '/class/wizard/active/electrocute',
+      description: 'This is a Signature spell. Signature spells are free to cast.\n' +
+        '\n' +
+        'Lightning arcs from your fingertips, dealing 138% weapon damage as Lightning. The lightning can jump, hitting up to 2 additional enemies.',
+      descriptionHtml: '<p><span class="d3-color-gold">This is a Signature spell. Signature spells are free to cast.</span></p>\n' +
+        '\n' +
+        '<p>Lightning arcs from your fingertips, dealing <span class="d3-color-green">138%</span> weapon damage as Lightning. The lightning can jump, hitting up to <span class="d3-color-green">2</span> additional enemies.</p>'
+    },
+    rune: {
+      slug: 'surge of power',
+      type: 'd',
+      name: 'Surge of Power',
+      level: 44,
+      description: 'Gain 1 Arcane Power for each enemy hit.',
+      descriptionHtml: '<p>Gain <span class="d3-color-green">1</span> Arcane Power for each enemy hit.</p>'
+    }
+  },
+  {
+    skill: {
+      slug: 'disintegrate',
+      name: 'Disintegrate',
+      icon: 'wizard_disintegrate',
+      level: 21,
+      tooltipUrl: '/class/wizard/active/disintegrate',
+      description: 'Cost: 18 Arcane Power\n' +
+        '\n' +
+        'Channel a beam of pure energy, dealing 390% weapon damage as Arcane.\n' +
+        '\n' +
+        'Disintegrate damage is increased by 250% weapon damage every second, up to a maximum total of 890% weapon damage as Arcane.',
+      descriptionHtml: '<p><span class="d3-color-gold">Cost:</span> <span class="d3-color-green">18</span> Arcane Power</p>\n' +
+        '\n' +
+        '<p>Channel a beam of pure energy, dealing <span class="d3-color-green">390%</span> weapon damage as Arcane.</p>\n' +
+        '\n' +
+        '<p>Disintegrate damage is increased by <span class="d3-color-green">250%</span> weapon damage every second, up to a maximum total of <span class="d3-color-green">890%</span> weapon damage as Arcane.</p>'
+    },
+    rune: {
+      slug: 'chaos nexus',
+      type: 'd',
+      name: 'Chaos Nexus',
+      level: 48,
+      description: 'While channeling the beam you become charged with energy and discharge at nearby enemies dealing 115% weapon damage as Arcane.',
+      descriptionHtml: '<p>While channeling the beam you become charged with energy and discharge at nearby enemies dealing <span class="d3-color-green">115%</span> weapon damage as Arcane.</p>'
+    }
+  },
+  {
+    skill: {
+      slug: 'frost-nova',
+      name: 'Frost Nova',
+      icon: 'wizard_frostnova',
+      level: 4,
+      tooltipUrl: '/class/wizard/active/frost-nova',
+      description: 'Cooldown: 11 seconds\n' +
+        '\n' +
+        'Blast nearby enemies with an explosion of ice and freeze them for 2 seconds.',
+      descriptionHtml: '<p><span class="d3-color-gold">Cooldown:</span> <span class="d3-color-green">11</span> seconds</p>\n' +
+        '\n' +
+        '<p>Blast nearby enemies with an explosion of ice and freeze them for <span class="d3-color-green">2</span> seconds.</p>'
+    },
+    rune: {
+      slug: 'bone chill',
+      type: 'a',
+      name: 'Bone Chill',
+      level: 51,
+      description: 'Enemies take 33% more damage while frozen or chilled by Frost Nova.',
+      descriptionHtml: '<p>Enemies take <span class="d3-color-green">33%</span> more damage while frozen or chilled by Frost Nova.</p>'
+    }
+  },
+  {
+    skill: {
+      slug: 'slow-time',
+      name: 'Slow Time',
+      icon: 'wizard_slowtime',
+      level: 16,
+      tooltipUrl: '/class/wizard/active/slow-time',
+      description: 'Cooldown: 15 seconds\n' +
+        '\n' +
+        'Invoke a bubble of warped time and space at your target location up to 60 yards away for 15 seconds, reducing enemy attack speed by 20% and movement speed by 60%. This bubble also slows the speed of enemy projectiles by 90%.',
+      descriptionHtml: '<p><span class="d3-color-gold">Cooldown:</span> <span class="d3-color-green">15</span> seconds</p>\n' +
+        '\n' +
+        '<p>Invoke a bubble of warped time and space at your target location up to <span class="d3-color-green">60</span> yards away for <span class="d3-color-green">15</span> seconds, reducing enemy attack speed by <span class="d3-color-green">20%</span> and movement speed by <span class="d3-color-green">60%</span>. This bubble also slows the speed of enemy projectiles by <span class="d3-color-green">90%</span>.</p>'
+    },
+    rune: {
+      slug: 'stretch time',
+      type: 'e',
+      name: 'Stretch Time',
+      level: 53,
+      description: 'Time is sped up for any allies standing in the area, increasing their attack speed by 10%.',
+      descriptionHtml: '<p>Time is sped up for any allies standing in the area, increasing their attack speed by <span class="d3-color-green">10%</span>.</p>'
+    }
+  },
+  {
+    skill: {
+      slug: 'storm-armor',
+      name: 'Storm Armor',
+      icon: 'wizard_stormarmor',
+      level: 17,
+      tooltipUrl: '/class/wizard/active/storm-armor',
+      description: 'Cost: 25 Arcane Power\n' +
+        '\n' +
+        'Bathe yourself in electrical energy, periodically shocking a nearby enemy for 175% weapon damage as Lightning. Lasts 10 minutes.\n' +
+        '\n' +
+        'Only one Armor may be active at a time.',
+      descriptionHtml: '<p><span class="d3-color-gold">Cost:</span> <span class="d3-color-green">25</span> Arcane Power</p>\n' +
+        '\n' +
+        '<p>Bathe yourself in electrical energy, periodically shocking a nearby enemy for <span class="d3-color-green">175%</span> weapon damage as Lightning. Lasts <span class="d3-color-green">10</span> minutes.</p>\n' +
+        '\n' +
+        '<p><span class="d3-color-yellow">Only one Armor may be active at a time.</span></p>'
+    },
+    rune: {
+      slug: 'scramble',
+      type: 'b',
+      name: 'Scramble',
+      level: 43,
+      description: 'Increase your movement speed by 25% for 3 seconds when you are hit by melee or ranged attacks.',
+      descriptionHtml: '<p>Increase your movement speed by <span class="d3-color-green">25%</span> for <span class="d3-color-green">3</span> seconds when you are hit by melee or ranged attacks.</p>'
+    }
+  },
+  {
+    skill: {
+      slug: 'archon',
+      name: 'Archon',
+      icon: 'wizard_archon',
+      level: 30,
+      tooltipUrl: '/class/wizard/active/archon',
+      description: 'Cooldown: 120 seconds\n' +
+        '\n' +
+        'Transform into a being of pure arcane energy for 20 seconds. While in Archon form, your normal abilities are replaced by powerful Archon abilities, your damage is increased by 30%, and your Armor and resistances are increased by 150%.\n' +
+        '\n' +
+        'Each enemy killed while in Archon form increases your damage by 6% for the remaining duration of Archon.',
+      descriptionHtml: '<p><span class="d3-color-gold">Cooldown:</span> <span class="d3-color-green">120</span> seconds</p>\n' +
+        '\n' +
+        '<p>Transform into a being of pure arcane energy for <span class="d3-color-green">20</span> seconds. While in Archon form, your normal abilities are replaced by powerful Archon abilities, your damage is increased by <span class="d3-color-green">30%</span>, and your Armor and resistances are increased by <span class="d3-color-green">150%</span>.</p>\n' +
+        '\n' +
+        '<p>Each enemy killed while in Archon form increases your damage by <span class="d3-color-green">6%</span> for the remaining duration of Archon.</p>'
+    },
+    rune: {
+      slug: 'improved archon',
+      type: 'a',
+      name: 'Improved Archon',
+      level: 60,
+      description: 'Increase the damage of all Archon abilities by 50%.',
+      descriptionHtml: '<p>Increase the damage of all Archon abilities by <span class="d3-color-green">50%</span>.</p>'
+    }
+  }
+]
+[
+  {
+    skill: {
+      slug: 'power-hungry',
+      name: 'Power Hungry',
+      icon: 'wizard_passive_powerhungry',
+      level: 10,
+      tooltipUrl: '/class/wizard/passive/power-hungry',
+      description: 'You deal 30% additional damage to enemies farther than 30 yards.',
+      descriptionHtml: '<p>You deal <span class="d3-color-green">30%</span> additional damage to enemies farther than <span class="d3-color-green">30</span> yards.</p>',
+      flavorText: `"It just doesn't sit right with me. Some of the things these so-called wizards do... They border on necromancy. Or worse! It's just not proper magic." —Venerable Sorcerer Fob Dunar`
+    }
+  },
+  {
+    skill: {
+      slug: 'prodigy',
+      name: 'Prodigy',
+      icon: 'wizard_passive_prodigy',
+      level: 20,
+      tooltipUrl: '/class/wizard/passive/prodigy',
+      description: 'When you cast a Signature spell, you gain 5 Arcane Power.\n' +
+        '\n' +
+        'The following skills are Signature spells:\n' +
+        ' Magic Missile\n' +
+        ' Shock Pulse\n' +
+        ' Spectral Blade\n' +
+        ' Electrocute',
+      descriptionHtml: '<p>When you cast a Signature spell, you gain <span class="d3-color-green">5</span> Arcane Power.</p>\n' +
+        '\n' +
+        '<p>The following skills are Signature spells:<br></br><span class="tooltip-icon-bullet"></span> Magic Missile<br></br><span class="tooltip-icon-bullet"></span> Shock Pulse<br></br><span class="tooltip-icon-bullet"></span> Spectral Blade<br></br><span class="tooltip-icon-bullet"></span> Electrocute</p>',
+      flavorText: `"Heavy steel armor may turn aside a blade, but let's see how well it works against lightning!" —Larra Stormlash's infamous faux pas at the Royal Westmarch Joust`
+    }
+  },
+  {
+    skill: {
+      slug: 'dominance',
+      name: 'Dominance',
+      icon: 'x1_wizard_passive_arcaneaegis',
+      level: 50,
+      tooltipUrl: '/class/wizard/passive/dominance',
+      description: 'Killing an enemy grants a shield that absorbs 2% of your Life in damage for 3 seconds. This effect can stack up to 10 times.\n' +
+        '\n' +
+        'Refreshing Dominance will set the shield to its maximum possible potency and each stack will increase its total duration by 0.5 seconds.',
+      descriptionHtml: '<p>Killing an enemy grants a shield that absorbs <span class="d3-color-green">2%</span> of your Life in damage for <span class="d3-color-green">3</span> seconds. This effect can stack up to <span class="d3-color-green">10</span> times.</p>\n' +
+        '\n' +
+        '<p>Refreshing Dominance will set the shield to its maximum possible potency and each stack will increase its total duration by <span class="d3-color-green">0.5</span> seconds.</p>',
+      flavorText: `"Why waste your own energy? Using your enemy's to protect yourself strengthens you while it weakens him. What could be more perfect?" —Ennead Sage Resko`
+    }
+  },
+  {
+    skill: {
+      slug: 'unwavering-will',
+      name: 'Unwavering Will',
+      icon: 'x1_wizard_passive_unwaveringwill',
+      level: 64,
+      tooltipUrl: '/class/wizard/passive/unwavering-will',
+      description: 'Standing still for 1.5 seconds increases the following attributes:\n' +
+        '\n' +
+        '\n' +
+        ' Armor: 20%\n' +
+        ' All Resistances: 20%\n' +
+        ' Damage: 10%',
+      descriptionHtml: '<p>Standing still for <span class="d3-color-green">1.5</span> seconds increases the following attributes:</p>\n' +
+        '\n' +
+        '<p><span class="tooltip-icon-bullet"></span> Armor: <span class="d3-color-green">20%</span><br></br><span class="tooltip-icon-bullet"></span> All Resistances: <span class="d3-color-green">20%</span><br></br><span class="tooltip-icon-bullet"></span> Damage: <span class="d3-color-green">10%</span></p>',
+      flavorText: '"At times the greatest strategy is to withdraw into yourself, to experience the clarity of mind in the moments before launching your attack." —Archmage Skye'
+    }
+  }
+]

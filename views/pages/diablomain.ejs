@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= player %>'s Diablo 3 Characters</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/public/js/diablo3characters.js"></script>
+<style>
+    body {
+        margin: 10px;
+    }
+    .card-columns {
+        column-count: 1;
+}
+</style>
+</head>
+<body>
+    <h1><%= player %>'s Diablo 3 Characters</h1>
+    <button type="button" class="btn btn-secondary btn-sm" id="diablo3CharsBackButton">< Back</button><br><br>
+        <% if (guild) { %>
+            <div class="card text-white bg-dark mb-3" style="max-width: 17rem;">
+                <div class="card-header"><span><b>Guild: </b></span><span> <%= guild %></span></div>
+              </div>
+        <% } %>
+        <div class="card-columns">
+        <% characters.forEach(function(c) { %>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><%= c.name %><br><a href="/diablo/character/<%= c.id %>/getskills/<%= c.name %>" class="btn btn-sm btn-success">Skill Info</a> <a href="/diablo/character/<%= c.id %>/getitems/<%= c.name %>" class="btn btn-sm btn-success">Item Info</a></div>
+                <div class="card-body">
+                  <p class="card-text">Here are some stats about this character!</p>
+                  <p class="d3charStats card-text"><b><span>Gender: </span></b> <span><%= c.gender === 0 ? 'Male' : 'Female' %></span></p>
+                  <p class="d3charStats card-text"><b><span>Class: </span></b> <span><%= c.class %></span></p>
+                  <p class="d3charStats card-text"><b><span>Level: </span></b> <span><%= c.level %></span></p>
+                  <p class="d3charStats card-text"><b><span>Paragon Level: </span></b> <span><%= c.paragonLevel %></span></p>
+                  <p class="d3charKillStatsHeader card-text"><b><span>Kill Stats</span></b></p>
+                  <p class="d3charKillStats card-text"><b><span>Elites</span></b> <span><%= c.kills.elites %></span></p>
+                </div>
+              </div>
+        <% }); %>
+
+        </div>
+</body>
+</html>

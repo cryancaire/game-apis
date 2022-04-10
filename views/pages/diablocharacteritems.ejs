@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= char %>'s Gear</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/public/js/diablo3characters.js"></script>
+<style>
+    body {
+        margin: 10px;
+    }
+    .card-columns {
+        column-count: 7;
+    }
+
+    .card {
+        min-height: 500px;
+        max-height: 600px;
+        overflow:auto;
+    }
+    
+    .card-header {
+        max-height: 100px;
+        min-height: 100px;
+        text-align: center;
+        vertical-align:middle;
+    
+    }
+
+    .set-text {
+        color: green;
+    }
+
+</style>
+</head>
+<body>
+    <h1><%= char %>'s Gear</h1>
+    <input type="hidden" id="bnetID" value="<%= bnet %>" />
+    <button type="button" class="btn btn-secondary btn-sm" id="diablo3itemsBackButton">< Back</button>
+        <div class="card-columns">
+        <% for (const[key, value] of Object.entries(items)) { %>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem; border: 5px solid <%= value.displayColor %>;">
+                <div class="card-header"><%= value.name %> <br><img style="border-radius:3px;" src="http://media.blizzard.com/d3/icons/items/small/<%= value.icon %>.png" alt=""></div>
+                <div class="card-body">
+                    <p class="card-text">
+                      <%= value.typeName %><br>
+                      <% if (value.armor > 0) { %>
+                        Armor: <%= Math.floor(value.armor) %><br>
+                      <% }; %> 
+                    </p>
+                  
+                
+                <% if (value.set) { %>
+                    <p class="card-text set-text">
+                        <%= value.set.name %>
+                      </p>
+                <% }; %>    
+            </div>
+                <div class="card-footer">
+                    <small class="text-muted"><%= value.flavorText %></small>
+                    </div>
+              </div>
+        <% }; %>
+
+        </div>
+</body>
+</html>

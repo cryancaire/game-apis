@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= name %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/public/js/ff14search.js"></script>
+<style>
+    body {
+        margin: 2rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-columns {
+        column-count: 1;
+    }
+
+    .card {
+        overflow:auto;
+    }
+    
+    .card-header {
+        max-height: 100px;
+        text-align: center;
+        vertical-align:middle;
+    
+    }
+
+    .card {
+        max-width: 15rem !important;
+    }
+
+    .charInfoCard {
+        min-height: 150px;
+        min-width: 300px;
+    }
+
+    .avatar {
+        width: 48px;
+    }
+
+    .mainContainer {
+        justify-content: center;
+        display: flex;
+    }
+
+    .contColumn {
+        margin: 0 1rem;
+    }
+
+    .iconRow {
+        display: flex;
+        align-items: center;
+    }
+
+    .jobIcon {
+        width: 48px;
+    }
+
+    .iconColumn {
+        margin: 0 0.5rem;
+    }
+
+    .iconCardBody {
+        padding: 1.25rem 0.25rem !important;
+    }
+</style>
+</head>
+<body>
+<% if (name) { %>  
+<div class="mainContainer">
+    <div class="contColumn">
+        <h1>Character Info</h1>
+    <div class="card-columns">
+        <div class="card text-white bg-dark mb-3 charInfoCard" style="width: 18rem;">
+            <img class="card-img-top" src="<%= portrait %>" alt="Avatar">
+            <div class="card-body">
+              <h5 class="card-title"><%= name %></h5>
+              <p class="card-text">
+                Name Day: <%= nameDay %><br>
+                Datacenter: <%= dc %><br>
+                Server: <%= server %>
+                <% if (freeCompanyName) { %>
+                    <br>Free Company: <%= freeCompanyName %>
+                <% } %>
+              </p>
+            </div>
+          </div>
+        <div class="card text-white bg-dark mb-3 charInfoCard" style="max-width: 18rem;">
+            <div class="card-header">Active Job</div>
+            <div class="card-body">
+                <p class="card-text">
+                    <% let jobIcon = currentClass.UnlockedState.Name.replace(' ', '').toLowerCase() %>
+                    <div class="iconRow">
+                        <div class="iconColumn"><img class="jobIcon" src="https://xivapi.com/cj/1/<%= jobIcon %>.png"></div>
+                        <div class="iconColumn"><%= currentClass.UnlockedState.Name %><br>
+                            <small>Level: <%= currentClass.Level %></small><br>
+                            <small>EXP: <%= currentClass.ExpLevel %> / <%= currentClass.ExpLevelMax %></small>
+                        </div>
+                    </div>
+                </p> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contColumn">
+    <button type="button" class="btn btn-secondary btn-sm" id="ff14CharBackButton">< Back</button>
+    <h1>Jobs</h1> 
+        <div class="card-columns">
+            <% for (var i = 0; i < jobs.length; i++) { %>
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><%= jobs[i].UnlockedState.Name %></div>
+                    <div class="card-body iconCardBody">
+                        <p class="card-text">
+                            <div class="iconRow">
+                                <% let jobIcon = jobs[i].UnlockedState.Name.replace(' ', '').toLowerCase(); jobIcon = jobIcon.replace(' (limited job)', '') %>
+                                <div class="iconColumn"><img class="jobIcon" src="https://xivapi.com/cj/1/<%= jobIcon %>.png"></div>
+                                <div class="iconColumn">
+                                    <small>Level: <%= jobs[i].Level %></small><br>
+                                    <small>EXP: <%= jobs[i].ExpLevel %> / <%= jobs[i].ExpLevelMax %></small>
+                                </div>
+                            </div>
+                        </p> 
+                    </div>
+                </div>
+            <% }; %>
+        </div>
+    <% } else { %>
+        <h1>Character not found</h1>
+    <% } %>
+</div>
+</div>
+</body>
+</html>

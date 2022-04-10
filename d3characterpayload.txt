@@ -1,0 +1,180 @@
+{
+  id: 121460939,
+  name: 'Mancer',
+  class: 'necromancer',
+  gender: 0,
+  level: 70,
+  paragonLevel: 452,
+  kills: { elites: 1711 },
+  hardcore: false,
+  seasonal: true,
+  seasonCreated: 21,
+  skills: {
+    active: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    passive: [ [Object], [Object], [Object], [Object] ]
+  },
+  items: {
+    head: {
+      id: 'P6_Necro_Set_3_Helm',
+      name: "Inarius's Understanding",
+      icon: 'p6_necro_set_3_helm_demonhunter_male',
+      displayColor: 'green',
+      tooltipParams: '/item/inariuss-understanding-P6_Necro_Set_3_Helm'
+    },
+    neck: {
+      id: 'Unique_Amulet_101_x1',
+      name: 'Haunt of Vaxo',
+      icon: 'unique_amulet_101_x1_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/haunt-of-vaxo-Unique_Amulet_101_x1'
+    },
+    torso: {
+      id: 'P6_Necro_Set_3_Chest',
+      name: "Inarius's Conviction",
+      icon: 'p6_necro_set_3_chest_demonhunter_male',
+      displayColor: 'green',
+      tooltipParams: '/item/inariuss-conviction-P6_Necro_Set_3_Chest'
+    },
+    shoulders: {
+      id: 'P6_Necro_Set_3_Shoulders',
+      name: "Inarius's Martyrdom",
+      icon: 'p6_necro_set_3_shoulders_demonhunter_male',
+      displayColor: 'green',
+      tooltipParams: '/item/inariuss-martyrdom-P6_Necro_Set_3_Shoulders'
+    },
+    legs: {
+      id: 'P6_Necro_Set_3_Pants',
+      name: "Inarius's Reticence",
+      icon: 'p6_necro_set_3_pants_demonhunter_male',
+      displayColor: 'green',
+      tooltipParams: '/item/inariuss-reticence-P6_Necro_Set_3_Pants'
+    },
+    waist: {
+      id: 'Unique_Belt_108_p2',
+      name: "Sebor's Nightmare",
+      icon: 'unique_belt_108_p2_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/sebors-nightmare-Unique_Belt_108_p2'
+    },
+    hands: {
+      id: 'P69_Necro_Unique_Gloves_22',
+      name: 'Grasps of Essence',
+      icon: 'p69_necro_unique_gloves_22_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/grasps-of-essence-P69_Necro_Unique_Gloves_22'
+    },
+    bracers: {
+      id: 'Unique_Bracer_106_x1',
+      name: 'Nemesis Bracers',
+      icon: 'unique_bracer_106_x1_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/nemesis-bracers-Unique_Bracer_106_x1'
+    },
+    feet: {
+      id: 'P6_Necro_Set_3_Boots',
+      name: "Inarius's Perseverance",
+      icon: 'p6_necro_set_3_boots_demonhunter_male',
+      displayColor: 'green',
+      tooltipParams: '/item/inariuss-perseverance-P6_Necro_Set_3_Boots'
+    },
+    leftFinger: {
+      id: 'Unique_Ring_006_p2',
+      name: 'Broken Promises',
+      icon: 'unique_ring_006_p2_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/broken-promises-Unique_Ring_006_p2'
+    },
+    rightFinger: {
+      id: 'P6_Unique_Ring_03',
+      name: "Krysbin's Sentence",
+      icon: 'p6_unique_ring_03_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/krysbins-sentence-P6_Unique_Ring_03'
+    },
+    mainHand: {
+      id: 'Unique_Sword_2H_008_x1',
+      name: 'The Sultan of Blinding Sand',
+      icon: 'unique_sword_2h_008_x1_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/the-sultan-of-blinding-sand-Unique_Sword_2H_008_x1'
+    }
+  },
+  followers: {
+    templar: {
+      slug: 'templar',
+      level: 70,
+      items: [Object],
+      stats: [Object],
+      skills: [Array]
+    },
+    scoundrel: {
+      slug: 'scoundrel',
+      level: 70,
+      items: [Object],
+      stats: [Object],
+      skills: []
+    },
+    enchantress: {
+      slug: 'enchantress',
+      level: 70,
+      items: [Object],
+      stats: [Object],
+      skills: [Array]
+    }
+  },
+  legendaryPowers: [
+    {
+      id: 'Unique_Sword_1H_101_x1',
+      name: 'Thunderfury, Blessed Blade of the Windseeker',
+      icon: 'unique_sword_1h_101_x1_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/thunderfury-blessed-blade-of-the-windseeker-Unique_Sword_1H_101_x1'
+    },
+    {
+      id: 'Unique_Shoulder_102_x1',
+      name: 'Spaulders of Zakara',
+      icon: 'unique_shoulder_102_x1_demonhunter_male',
+      displayColor: 'orange',
+      tooltipParams: '/item/spaulders-of-zakara-Unique_Shoulder_102_x1'
+    }
+  ],
+  progression: {
+    act1: { completed: false, completedQuests: [] },
+    act2: { completed: false, completedQuests: [] },
+    act3: { completed: false, completedQuests: [] },
+    act4: { completed: false, completedQuests: [] },
+    act5: { completed: false, completedQuests: [] }
+  },
+  alive: true,
+  lastUpdated: 1597370462,
+  highestSoloRiftCompleted: 30,
+  stats: {
+    life: 547050.25,
+    damage: 690127,
+    toughness: 10872500,
+    healing: 479352,
+    attackSpeed: 1.288,
+    armor: 6285,
+    strength: 77,
+    dexterity: 77,
+    vitality: 4110,
+    intelligence: 8762,
+    physicalResist: 152,
+    fireResist: 0,
+    coldResist: 150,
+    lightningResist: 491,
+    poisonResist: 155,
+    arcaneResist: 0,
+    blockChance: 0,
+    blockAmountMin: 0,
+    blockAmountMax: 0,
+    goldFind: 0.31999993,
+    critChance: 0.19,
+    thorns: 0,
+    lifeSteal: 0,
+    lifePerKill: 21826,
+    lifeOnHit: 0,
+    primaryResource: 200,
+    secondaryResource: 0
+  }
+}

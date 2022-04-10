@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search For Final Fantasy 14 Character</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/public/js/ff14search.js"></script>
+<style>
+    body {
+        margin: 10px;
+    }
+    .card-columns {
+        column-count: 1;
+    }
+
+    .error {
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Character Name</h1>
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="FF14 Character" aria-label="Battlenet ID" aria-describedby="basic-addon2" id="ff14Search">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="ff14Submit">Get Character Info</button>
+            </div>
+        </div>
+        <div><br>
+            <% if (error) { %>
+                <span class="error"><%= error %></span>
+            <% } %>
+        </div>
+        <div><br>
+            <button id="mainMenuButton" type="button" class="btn btn-secondary btn-sm">Main Menu</button>
+        </div>
+    </div>
+
+    <div class="spinner-border" role="status">
+        <span id="spinner" class="sr-only">Loading...</span>
+      </div>
+</body>
+</html>

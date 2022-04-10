@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Battlenet ID</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/public/js/diablo3characters.js"></script>
+    <style>
+        body {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter A BattleTag</h1>
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="BattleTag" value="<%= battlenetTag %>" aria-label="Battlenet ID" aria-describedby="basic-addon2" id="bnetIDInput">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="bnetSubmit">Get Character Info</button>
+            </div>
+        </div>
+        <div><br>
+            <button id="mainMenuButton" type="button" class="btn btn-secondary btn-sm">Main Menu</button>
+        </div>
+    </div>
+</body>
+</html>
